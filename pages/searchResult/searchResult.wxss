@@ -1,0 +1,4 @@
+/* pages/searchResult/searchResult.wxss */
+.goods-list-grid {
+  margin-top: 45px;
+}

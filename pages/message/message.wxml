@@ -1,0 +1,18 @@
+<!--pages/message/message.wxml-->
+<view class="title">
+  <text>消息列表</text>
+</view>
+<view>
+  <navigator url="/pages/message_chat/message_chat?merchant_id={{item.merchant_id}}" class="msg-item" wx:for="{{msgList}}" wx:key="id">
+    <view class="avatar-view">
+      <image src="{{item.avatarSrc}}" mode="widthFix" />
+    </view>
+    <view class="msg-view">
+      <text class="username">{{item.username}}</text>
+      <text class="content">{{item.msg}}</text>
+    </view>
+    <view class="time-view">
+      <text>{{item.time}}</text>
+    </view>
+  </navigator>
+</view>

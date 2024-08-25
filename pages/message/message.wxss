@@ -1,0 +1,45 @@
+/* pages/message/message.wxss */
+.title {
+  font-style: inherit;
+  font-size: 36rpx;
+  /*text-align: center;*/
+}
+
+.msg-item {
+  display: flex;
+}
+.avatar-view {
+  flex: 1;
+  padding: 12rpx;
+}
+.avatar-view image {
+  width: 160rpx;
+  border-radius: 30%;
+}
+.msg-view {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+}
+.username {
+  font-weight: bold;
+  font-size: 35rpx;
+  color: #5AA;
+}
+.content {
+  font-size: 28rpx;
+  color: #888;
+}
+.time-view {
+  flex: 1;
+  /* 垂直居中 */
+  display: flex;
+  justify-content:center;
+}.time-view text {
+  font-size: 24rpx;
+  /* 垂直居中 */
+  align-self:center;
+}

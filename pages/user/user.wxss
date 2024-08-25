@@ -1,0 +1,95 @@
+/* pages/user/user.wxss */
+
+/* 用户信息部分 */
+.user_info_wrap {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20rpx;
+  padding-right: 20rpx;
+}
+.avatar_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+  margin: 30rpx;
+  border-radius: 10px;
+}
+
+.avatar_wrap image {
+  width: 100%;
+  border-radius: 10px;
+}
+.text_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.user_name {
+  font-size: 34rpx;
+  font-weight: bolder;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.phone_number_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone_number {
+  color: var(--themeColor);
+  font-size: 34rpx;
+}
+
+/* 订单处理部分按钮 */
+.order_oprate_wrap {
+  display: flex;
+  margin: 20px;
+  
+}
+
+.order_oprate_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+}
+.order_oprate_item image {
+  width: 60%;
+}
+.oprate_name {
+  font-size: 30rpx;
+}
+.add-dot {
+  position: relative;
+}
+
+.add-dot-after {
+  /* 小红点内容 */
+  font-weight: bolder;
+  font-size: 32rpx;
+  color: #009b9b;
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+
+  /* 小红点位置 */
+  position: absolute;
+  right: -6px;
+  top: -5px;
+
+  /* 小红点外观 */
+  width: 40rpx;
+  height: 40rpx;
+  background-color: white;
+  border: 6rpx solid #009b9b;
+  border-radius: 50%;
+}

@@ -1,0 +1,122 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.background {
+  background-color: #F3F3F3;
+}
+
+/*置顶*/
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  
+}
+
+/***顶部搜索栏***/
+/*搜索框和搜索按钮的样式*/
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  background-color: white;
+  border: 2px solid #009b9b;
+  border-radius: 10px;
+}
+/*搜索框*/
+.search-input {
+  flex: 1;
+  padding-left: 10rpx;
+  border: none;
+  height: 100%;
+  font-size: 32rpx;
+}
+/*搜索按钮*/
+.search-button {
+  padding: 8px;
+  margin-left: 5px;
+  border: none;
+  flex-basis: 20%;
+  background-color: #009b9b;
+  color: white;
+  border-radius: 8px;
+  font-size: 32rpx;
+  cursor: pointer;
+}
+
+/***搜索结果与推荐页-商品样式***/
+/*商品列表网格布局*/
+.goods-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;/*各个网格之间的距离*/
+  margin: 5px;
+}
+/*单个商品网格样式*/
+.goods-item {
+  border: 5rpx solid #eaeaea;
+  border-radius: 10rpx;
+  white-space: nowrap;/*强制文本在一行显示*/
+  overflow: hidden;/*超出盒子的文本隐藏不显示*/
+  background-color: white;
+}
+/*商品信息样式*/
+.goods-name {
+  font: normal 34rpx arial,sans-serif;
+}
+.goods-price {
+  font: bold 40rpx arial,sans-serif;
+  color: #cc0000;
+}
+.goods-saleVol {
+  font-size: 24rpx;
+  color: #7f7f7f;
+}
+/*商品图片容器*/
+.image-container {
+  position: relative;
+  width: 100%; /* 或者你想要的固定宽度 */
+  padding-bottom: 100%; /* 因为它是宽度的100% */
+  height: 0; /* 为了保持长宽比，设置高度为0 */
+}
+/*商品图片样式*/
+.goods-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* 父容器宽度的100% */
+  height: 100%; /* 父容器高度的100% */
+  /*transform: scale(0.95)*//*使图片与容器之间有5%的间隙*/
+}
+
+/***多选框checkbox样式***/
+/*checkbox 选项框大小 */
+checkbox .wx-checkbox-input {
+  width: 35rpx;
+  height: 35rpx;
+  border: 4rpx solid #227C7C;
+  border-radius: 100%;
+}
+/*checkbox选中后样式 */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #227C7C;
+}
+/*checkbox选中后图标样式 */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

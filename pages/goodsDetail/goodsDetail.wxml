@@ -1,0 +1,22 @@
+<!--pages/goodsDetail/goodsDetail.wxml-->
+<view class="background">
+  <!--将商品图片做成手动轮播图-->
+  <swiper class=".goodsImgs-swiper" indicator-dots circular>
+    <swiper-item wx:for="{{imgUrls}}" wx:key="id">
+      <image src="{{item}}" mode=""/>
+    </swiper-item>
+  </swiper>
+  
+  <view class="goods-price this-price">￥{{goodsPrice}}</view>
+  <view class="goods-name">{{goodsTitle}}</view>
+  <view class="address"><button>请选择收货地址</button></view>
+  <!--<view>地址</view>
+  <view>选项按钮</view>-->
+  <view class="bottom-btn-container">
+    <button class="custServ">
+      <image src="/images/icon/custServ.png" mode="widthFix"/>
+    </button>
+    <button class="addCart-button" bind:tap="addCart" style="position: relative; left: 0rpx; top: 0rpx">加购</button>
+    <button class="purchase-button">直接购买</button>
+  </view>
+</view>

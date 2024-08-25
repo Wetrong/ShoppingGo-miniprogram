@@ -1,0 +1,20 @@
+<!--pages/userInfoEdit/userInfoEdit.wxml-->
+<view>编辑：头像、用户名、电话号码、地址等信息</view>
+<navigator>
+  <view class="avatarView">
+    <image class="centerImg" src="{{avatar_url}}" alt=""/>
+  </view>
+  <view class="chgAvtView">更换头像</view>
+</navigator>
+<navigator class="info-item">
+  <text>用户名</text>
+  <text class="info-content">{{user_name}}》</text>
+</navigator>
+<navigator class="info-item">
+  <text>电话号码</text>
+  <text class="info-content">{{phone_number}}》</text>
+</navigator>
+<navigator class="info-item">
+  <text>收货地址</text>
+  <text class="info-content">{{address}}》</text>
+</navigator>

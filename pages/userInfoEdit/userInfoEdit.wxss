@@ -1,0 +1,36 @@
+/* pages/userInfoEdit/userInfoEdit.wxss */
+.avatarView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  
+}
+.avatarView image {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #CCC;
+  border-radius: 50%;
+}
+.chgAvtView {
+  display: flex;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #009b9b;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  margin-left: 2px;
+  height: 50px;
+  background-color: white;
+  border-top: 1px solid gray;
+}
+.info-content {
+  padding-left: 10rpx;
+  position: absolute;
+  right: 10px;
+  font-size: 32rpx;
+}

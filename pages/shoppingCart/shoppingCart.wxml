@@ -1,0 +1,51 @@
+<!--pages/shoppingCart/shoppingCart.wxml-->
+<view class="emptyNotice {{emptyDisplayClass}}">这里空空的~</view>
+<!-- 购物车清单 开始 -->
+<view class="background cart_content {{cartListDisplayClass}}">
+  <view class="cart_main">
+    <view class="cart_item" wx:for="{{goodsList}}" wx:for-index="index" wx:key="id">
+      <!-- 复选框 开始 -->
+      <view class="cart_chk_wrap">
+        <checkbox-group>
+          <checkbox checked="{{item.is_selected}}" bind:tap="selectItem" data-index="{{index}}" data-acId="{{item.addcart_id}}"></checkbox>
+        </checkbox-group>
+      </view>
+      <!-- 复选框 结束 -->
+
+      <!-- 商品图片 开始 -->
+      <navigator class="cart_img_wrap" url="/pages/goodsDetail/goodsDetail?goods_id={{item.goods_id}}">
+        <image mode="widthFix" src="{{item.img_url}}"></image>
+      </navigator>
+      <!-- 商品图片 结束 -->
+
+      <!-- 商品信息 开始 -->
+      <view class="cart_info_wrap">
+      
+        <navigator url="/pages/goodsDetail/goodsDetail?goods_id={{item.goods_id}}">
+          <view class="goods_name">{{item.goods_name}}</view>
+        </navigator>
+        <view class="goods_price_wrap">
+          <view class="goods_price">
+            ¥{{item.goods_price}}
+          </view>
+          <view class="cart_num_tool">
+            <view class="num_edit" bindtap="alterQuantity" data-oprate="-" data-goodsId="{{item.goods_id}}" data-index="{{index}}">-</view>
+            <view class="goods_num">{{item.quantity}}</view>
+            <view class="num_edit" bindtap="alterQuantity" data-oprate="+" data-goodsId="{{item.goods_id}}" data-index="{{index}}">+</view>
+          </view>
+        </view>
+      </view>
+      <!-- 商品信息 结束 -->
+    </view>
+  </view>
+</view>
+<!-- 购物车清单 结束 -->
+
+<!-- 底部操作按钮 -->
+<view class="bottom-btn-container">
+  <checkbox-group>
+    <checkbox checked="{{allSelected}}" bind:tap="selectAll">全选</checkbox>
+  </checkbox-group>
+  <button class="addCart-button">总共{{totalPrice}}元</button>
+  <button class="purchase-button" bind:tap="prepareOrder">下订单</button>
+</view>

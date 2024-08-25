@@ -1,0 +1,30 @@
+/* pages/login/login.wxss */
+.titleWord {
+  font:bold xx-large arial,sans-serif;
+}
+.selection {
+  font: normal x-large arial,sans-serif;
+}
+/*radio 选项框大小 */
+radio .wx-radio-input {
+  width: 50rpx;
+  height: 50rpx;
+  border: 1rpx solid #227C7C;
+  border-radius: 100%;
+}
+
+/*radio选中后样式 */
+radio .wx-radio-input.wx-radio-input-checked {
+  background: #227C7C;
+}
+
+/*radio选中后图标样式 */
+radio .wx-radio-input.wx-radio-input-checked::before {
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

@@ -1,0 +1,135 @@
+.titleWord {
+  font:bold xx-large arial,sans-serif;
+}
+.emptyNotice {
+  padding: 20px;
+  font:bold xx-large arial,sans-serif;
+  text-align: center;
+}
+.displayBlock { display: block; }
+.displayNone { display: none; }
+
+.cart_content {
+  padding-bottom: 50px;
+}
+
+.cart_main {
+  padding: 2rpx 10rpx 10rpx 10rpx;
+}
+
+.cart_item {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20rpx;
+  padding-right: 20rpx;
+}
+
+.cart_chk_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx;
+}
+
+.cart_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx;
+  border-radius: 10px;
+}
+
+.cart_img_wrap image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cart_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.goods_name {
+  font-weight: bolder;
+  font-size: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods_price {
+  color: var(--themeColor);
+  font-size: 34rpx;
+}
+
+.cart_num_tool {
+  display: flex;
+}
+
+.num_edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55rpx;
+  height: 55rpx;
+}
+
+.goods_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85rpx;
+  height: 55rpx;
+  background-color: #F5F5F5;
+}
+
+.bottom-btn-container {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+
+}
+
+.bottom-btn-container button {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  border: none;
+  border-radius: 0;
+}
+.bottom-btn-containe view {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  border: none;
+  border-radius: 0;
+}
+.addCart-button {
+  background-color: white;
+  color: black;
+}
+.purchase-button {
+  background-color: #00abab;
+}

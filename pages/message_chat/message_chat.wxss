@@ -1,0 +1,46 @@
+/* pages/message_chat/message_chat.wxss */
+.info-item {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  margin-left: 2px;
+  height: 50px;
+  background-color: white;
+  border-top: 1px solid gray;
+}
+.info-content {
+  padding-left: 10rpx;
+  position: absolute;
+  right: 10px;
+  font-size: 32rpx;
+}
+
+.bottom-input{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+.bottom-input input {
+  width: 70%;
+  height: 100%;
+  font-size: 30rpx;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+.bottom-input button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: skyblue;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/searchResult/searchResult",
+    "pages/goodsDetail/goodsDetail",
+    "pages/orderPage/orderPage",
+    "pages/message/message",
+    "pages/message_chat/message_chat",
+    "pages/shoppingCart/shoppingCart",
+    "pages/user/user",
+    "pages/userInfoEdit/userInfoEdit",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default",
+    "navigationBarTitleText": "生活购ShoppingGo",
+    "navigationBarBackgroundColor": "#00AFAF",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/images/tabs/home.png",
+      "selectedIconPath": "/images/tabs/home-act.png"
+    }, {
+      "pagePath": "pages/message/message",
+      "text": "消息",
+      "iconPath": "/images/tabs/message.png",
+      "selectedIconPath": "/images/tabs/message-act.png"
+    }, {
+      "pagePath": "pages/shoppingCart/shoppingCart",
+      "text": "购物车",
+      "iconPath": "/images/tabs/cart.png",
+      "selectedIconPath": "/images/tabs/cart-act.png"
+    }, {
+      "pagePath": "pages/user/user",
+      "text": "个人中心",
+      "iconPath": "/images/tabs/user.png",
+      "selectedIconPath": "/images/tabs/user-act.png"
+    }]
+  },
+  "style": "v2",
+  
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

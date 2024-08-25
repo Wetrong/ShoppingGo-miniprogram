@@ -1,0 +1,15 @@
+<!--pages/message_chat/message_chat.wxml-->
+<text>pages/message_chat/message_chat.wxml</text>
+<view>{{chat_username}}</view>
+<view>
+  <!--消息列表-->
+  <view class="info-item" wx:for="{{msg_list}}" wx:key="index">
+    <view>发{{item.merchant_id}}</view>
+    <View>文{{item.msg}}-{{item.type}}</View>
+    <view>时{{item.time}}</view>
+  </view>
+</view>
+<view class="bottom-input">
+  <input type="text" placeholder="输入聊天内容" name="" id=""/>
+  <button>↑</button>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/orderPage/orderPage.wxml-->
+<view class="cart_content">
+  <view class="cart_main">
+    <view class="cart_item" wx:for="{{goodsList}}" wx:key="id">
+
+      <!-- 商品图片 开始 -->
+      <navigator class="cart_img_wrap" url="/pages/goodsDetail/goodsDetail?goodsId={{item.goods_id}}">
+        <image mode="widthFix" src="{{item.img_url}}"></image>
+      </navigator>
+      <!-- 商品图片 结束 -->
+
+      <!-- 商品信息 开始 -->
+      <view class="cart_info_wrap">
+        <navigator url="/pages/product_detail/index?id={{item.goods_id}}">
+          <view class="goods_name">{{item.goods_name}}</view>
+        </navigator>
+        <view class="goods_price_wrap">
+          <view class="goods_price">
+            ¥{{item.goods_price*item.quantity}}
+          </view>
+          <view class="cart_num_tool">
+            <view class="goods_num">{{item.quantity}}</view>
+          </view>
+        </view>
+      </view>
+      <!-- 商品信息 结束 -->
+    </view>
+  </view>
+</view>
+
+<view class="bottom-btn-container">
+  <button class="addCart-button" >总共{{totalPrice}}元</button>
+  <button class="purchase-button" bind:tap="payment">付款</button>
+</view>

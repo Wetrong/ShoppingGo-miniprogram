@@ -1,0 +1,61 @@
+/* pages/goodsDetail/goodsDetail.wxss */
+/*轮播图容器，轮播item，轮播image设置：高==宽==屏宽*/
+.goodsImgs-swiper {
+  width: 100%;
+  height: 100vw;
+}
+.goodsImgs-swiper swiper-item{
+  width: 100%; 
+  height: 100vw;
+}
+.goodsImgs-swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.this-price {
+  font-size: 60rpx;
+}
+.address{
+  width: 600rpx;
+  text-align: left;
+  padding-bottom: 90rpx;
+}
+.address button{
+  width: 100%;
+  font-size: 34rpx;
+}
+.bottom-btn-container {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  height: 90rpx;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+
+} 
+.bottom-btn-container button {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  border: none;
+  border-radius: 0;
+}
+.custServ {
+  background-color: white;
+}
+.custServ image {
+  width: 60rpx;
+}
+.addCart-button {
+  font-size: 36rpx;
+  background-color: #00e7e7;
+}
+.purchase-button {
+  font-size: 36rpx;
+  background-color: #00abab;
+}

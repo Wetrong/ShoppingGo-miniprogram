@@ -1,0 +1,90 @@
+<!--pages/user/user.wxml-->
+<navigator class="user_info_wrap" url="/pages/userInfoEdit/userInfoEdit">
+  <!-- 用户头像 开始 -->
+  <view class="avatar_wrap">
+    <image mode="widthFix" src="{{avatar_url}}" />
+  </view>
+  <!-- 用户头像 结束 -->
+
+  <!-- 用户信息 开始 -->
+  <view class="text_info_wrap">
+    <view>
+      <view class="user_name">{{user_name}}</view>
+    </view>
+    <view class="phone_number_wrap">
+      <view class="phone_number">
+        {{phone_number}}
+      </view>
+    </view>
+  </view>
+  <!-- 用户信息 结束 -->
+</navigator>
+
+<!-- 订单操作 开始 -->
+<view class="order_oprate_wrap">
+  <view class="order_oprate_item">
+    <view>
+      <image src="/images/icon/all_order.png" mode="widthFix" />
+    </view>
+    <view class="oprate_name">
+      全部订单
+    </view>
+  </view>
+  <view class="order_oprate_item">
+    <view class="add-dot">
+      <image src="/images/icon/back_order.png" mode="widthFix" />
+      <view class="add-dot-after" style="visibility: {{back_order_visibility}};">{{back_order_num}}</view>
+    </view>
+    <view class="oprate_name">
+      待发货
+    </view>
+  </view>
+  <view class="order_oprate_item">
+    <view class="add-dot">
+      <view>
+        <image src="/images/icon/in_transit.png" mode="widthFix" />
+      </view>
+      <view class="add-dot-after" style="visibility: {{transport_visibility}};">{{transport_num}}</view>
+    </view>
+    <view class="oprate_name">
+      待收货
+    </view>
+  </view>
+  <view class="order_oprate_item">
+    <view>
+      <image src="/images/icon/reviews.png" mode="widthFix" />
+    </view>
+    <view class="oprate_name">
+      评价
+    </view>
+  </view>
+</view>
+<!-- 订单操作 结束 -->
+
+<view class="order_oprate_wrap">
+  <view class="order_oprate_item">
+    <view>
+      <image src="/images/icon/favorites.png" mode="widthFix" />
+    </view>
+    <view class="oprate_name">
+      收藏
+    </view>
+  </view>
+  <view class="order_oprate_item">
+    <view>
+      <image src="/images/icon/history.png" mode="widthFix" />
+    </view>
+    <view class="oprate_name">
+      历史浏览
+    </view>
+  </view>
+  <view class="order_oprate_item">
+    <view>
+      <image src="/images/icon/settings.png" mode="widthFix" />
+    </view>
+    <view class="oprate_name">
+      设置
+    </view>
+  </view>
+  <view class="order_oprate_item"></view>
+</view>

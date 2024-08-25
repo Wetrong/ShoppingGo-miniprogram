@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class="titleWord">请选择您的身份</view>
+<radio-group bindchange="radioChange" class="selection">
+  <radio id="consumer" value="consumer"/>
+  <label for="consumer">顾客</label>
+  <radio id="merchant" value="merchant"/>
+  <label for="merchant">商家</label>
+</radio-group>
+<button id="submit" bind:tap="submit">确认</button>
+<navigator url="../home/home">主页</navigator>
+
+<image src="../../images/swiperPic/swiper1.png" mode=""/>
